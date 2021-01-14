@@ -78,7 +78,7 @@ def main():
     # Define start and end times
     start_time, end_time = start_end_times(observation_length, observation_period)
 
-    # Open video stream and get size
+    # Open video stream and get its shape
     capture_stream = cv2.VideoCapture(0) # use VideoCapture(1) for USB webcam 
     print("Size of Video Input Stream: {}".format(get_video_input_size(capture_stream)))
 

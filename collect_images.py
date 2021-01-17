@@ -150,8 +150,12 @@ def main():
 
         current_time = time.time()
 
+    # Stop capture
     capture_stream.release()
     cv2.destroyAllWindows()
+
+    # Beep to signal end
+    winsound.Beep(1320,1000)
 
 if __name__ == '__main__':
     main()
